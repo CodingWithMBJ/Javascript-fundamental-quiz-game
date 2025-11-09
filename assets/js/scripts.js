@@ -47,97 +47,97 @@ const quizData = [
     options: ["=", "==", "===", ":"],
     answer: 0,
   },
-  {
-    question: "What is the correct way to write an array in JavaScript?",
-    options: [
-      "let arr = [1, 2, 3]",
-      "let arr = (1, 2, 3)",
-      "let arr = {1, 2, 3}",
-      "let arr = <1, 2, 3>",
-    ],
-    answer: 0,
-  },
-  {
-    question: "Which method converts a string to uppercase?",
-    options: [
-      "toUpperCase()",
-      "toCapitalize()",
-      "upper()",
-      "changeCase('upper')",
-    ],
-    answer: 0,
-  },
-  {
-    question: "What is the data type of NaN?",
-    options: ["number", "undefined", "object", "NaN"],
-    answer: 0,
-  },
-  {
-    question: "Which keyword is used to define a constant in JavaScript?",
-    options: ["let", "var", "const", "static"],
-    answer: 2,
-  },
-  {
-    question: "Which function is used to parse a string into an integer?",
-    options: ["parseInt()", "Number()", "parseFloat()", "toInteger()"],
-    answer: 0,
-  },
-  {
-    question: "What will `typeof []` return?",
-    options: ["array", "object", "list", "undefined"],
-    answer: 1,
-  },
-  {
-    question: "How do you write an if statement in JavaScript?",
-    options: ["if (x > y)", "if x > y then", "if x > y:", "if {x > y}"],
-    answer: 0,
-  },
-  {
-    question: "Which comparison operator checks both value and type?",
-    options: ["==", "===", "!=", "!=="],
-    answer: 1,
-  },
-  {
-    question:
-      "Which loop executes at least once, even if the condition is false?",
-    options: ["for", "while", "do...while", "forEach"],
-    answer: 2,
-  },
-  {
-    question: "How do you define a function in JavaScript?",
-    options: [
-      "function myFunc() {}",
-      "def myFunc()",
-      "func myFunc()",
-      "define myFunc()",
-    ],
-    answer: 0,
-  },
-  {
-    question: "What will `Boolean('')` return?",
-    options: ["true", "false", "undefined", "0"],
-    answer: 1,
-  },
-  {
-    question: "Which method joins all elements of an array into a string?",
-    options: ["join()", "concat()", "combine()", "merge()"],
-    answer: 0,
-  },
-  {
-    question: "Which built-in method returns the length of a string?",
-    options: ["length", "count()", "size()", "index()"],
-    answer: 0,
-  },
-  {
-    question: "Which statement is used to stop a loop in JavaScript?",
-    options: ["break", "stop", "exit", "halt"],
-    answer: 0,
-  },
-  {
-    question: "What will `typeof null` return?",
-    options: ["null", "undefined", "object", "boolean"],
-    answer: 2,
-  },
+  // {
+  //   question: "What is the correct way to write an array in JavaScript?",
+  //   options: [
+  //     "let arr = [1, 2, 3]",
+  //     "let arr = (1, 2, 3)",
+  //     "let arr = {1, 2, 3}",
+  //     "let arr = <1, 2, 3>",
+  //   ],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "Which method converts a string to uppercase?",
+  //   options: [
+  //     "toUpperCase()",
+  //     "toCapitalize()",
+  //     "upper()",
+  //     "changeCase('upper')",
+  //   ],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "What is the data type of NaN?",
+  //   options: ["number", "undefined", "object", "NaN"],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "Which keyword is used to define a constant in JavaScript?",
+  //   options: ["let", "var", "const", "static"],
+  //   answer: 2,
+  // },
+  // {
+  //   question: "Which function is used to parse a string into an integer?",
+  //   options: ["parseInt()", "Number()", "parseFloat()", "toInteger()"],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "What will `typeof []` return?",
+  //   options: ["array", "object", "list", "undefined"],
+  //   answer: 1,
+  // },
+  // {
+  //   question: "How do you write an if statement in JavaScript?",
+  //   options: ["if (x > y)", "if x > y then", "if x > y:", "if {x > y}"],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "Which comparison operator checks both value and type?",
+  //   options: ["==", "===", "!=", "!=="],
+  //   answer: 1,
+  // },
+  // {
+  //   question:
+  //     "Which loop executes at least once, even if the condition is false?",
+  //   options: ["for", "while", "do...while", "forEach"],
+  //   answer: 2,
+  // },
+  // {
+  //   question: "How do you define a function in JavaScript?",
+  //   options: [
+  //     "function myFunc() {}",
+  //     "def myFunc()",
+  //     "func myFunc()",
+  //     "define myFunc()",
+  //   ],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "What will `Boolean('')` return?",
+  //   options: ["true", "false", "undefined", "0"],
+  //   answer: 1,
+  // },
+  // {
+  //   question: "Which method joins all elements of an array into a string?",
+  //   options: ["join()", "concat()", "combine()", "merge()"],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "Which built-in method returns the length of a string?",
+  //   options: ["length", "count()", "size()", "index()"],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "Which statement is used to stop a loop in JavaScript?",
+  //   options: ["break", "stop", "exit", "halt"],
+  //   answer: 0,
+  // },
+  // {
+  //   question: "What will `typeof null` return?",
+  //   options: ["null", "undefined", "object", "boolean"],
+  //   answer: 2,
+  // },
 ];
 
 let currentQuestionIndex = 0;
@@ -146,6 +146,7 @@ let score = 0;
 window.addEventListener("DOMContentLoaded", () => {
   nextButton.style.display = "none";
   loadQuestion();
+  scoreContainer.classList.add("hidden");
 });
 
 function loadQuestion() {
@@ -183,7 +184,6 @@ function selectOption(selectedIndex) {
 
   if (selectedIndex === currentQuestion.answer) {
     score++;
-    showScore();
   }
 
   nextButton.style.display = "block";
@@ -213,5 +213,4 @@ restartButton.addEventListener("click", () => {
   quizContainer.classList.remove("hidden");
   nextButton.style.display = "none";
   loadQuestion();
-  showScore();
 });
